@@ -4,21 +4,26 @@ import java.io.IOException;
 import java.util.Random;
 
 /**
- * Módulo: Conceptos Fundamentales de Programación
- * Entrega 1 - GenerateInfoFiles (Semana 3)
- * Genera archivos planos para el proyecto de ventas.
+ * Module: Fundamental Programming Concepts
+ * Assignment 1 - GenerateInfoFiles (Week 3)
+ * This class generates pseudo-random plain text files as input for the sales project.
+ * * @author Daniela Escobar, Alvaro Enrique moreno
  */
 public class GenerateInfoFiles {
 
-  // 1. Datos para generar información coherente
+  // Data to generate consistent information
   private static final String[] NOMBRES = {"Juan", "Maria", "Carlos", "Ana", "Luis", "Elena"};
   private static final String[] APELLIDOS = {"Perez", "Gomez", "Rodriguez", "Lopez", "Garcia", "Sánchez"};
   private static final String[] PRODUCTOS = {"Laptop", "Mouse", "Teclado", "Monitor", "Webcam", "Impresora"};
 
-  // 2. Método Main: El motor que arranca todo
+  /**
+     * Main method: The engine that starts the generation process.
+     * Displays a success message or an error message if something goes wrong
+     * * @param args Command line arguments
+     */
   public static void main(String[] args) {
     try {
-      // Generamos 10 productos y 5 vendedores
+      // Generate 10 products and 5 salesmen as required
       createProductsFile(10);
       createSalesManInfoFile(5);
 
@@ -28,7 +33,11 @@ public class GenerateInfoFiles {
     }
   }
 
-  // 3. Método para crear el archivo de PRODUCTOS
+  /**
+     * Generates a file containing the available products information
+     * Format: i;nombre;precio.
+     * * @param productsCount Number of products to generate
+     */
   public static void createProductsFile(int productsCount) {
     try (PrintWriter writer = new PrintWriter(new File("productos_info.txt"))) {
       Random rand = new Random();
@@ -42,7 +51,11 @@ public class GenerateInfoFiles {
     }
   }
 
-  // 4. Método para crear el archivo de VENDEDORES
+  /**
+     * Generates a file with the personal information of the salesmen
+     * Format: CC;documento;nombre;apellido
+     * * @param salesmanCount Number of salesmen to generate
+     */
   public static void createSalesManInfoFile(int salesmanCount) {
     try (PrintWriter writer = new PrintWriter(new File("vendedores_info.txt"))) {
       Random rand = new Random();
@@ -51,9 +64,10 @@ public class GenerateInfoFiles {
         String nombre = NOMBRES[rand.nextInt(NOMBRES.length)];
         String apellido = APELLIDOS[rand.nextInt(APELLIDOS.length)];
 
+        // Write salesman data line by line
         writer.println("CC;" + documento + ";" + nombre + ";" + apellido);
 
-        // Crea automáticamente el archivo de ventas para este vendedor
+        // Automatically create a specific sales file for this salesman
         createSalesMenFile(rand.nextInt(5) + 1, "CC", documento);
       }
     } catch (IOException e) {
@@ -61,7 +75,15 @@ public class GenerateInfoFiles {
     }
   }
 
-  // 5. Método para crear los archivos individuales de VENTAS
+  /**
+     * Creates an individual sales file for a specific salesman
+     * Format: 
+     * Line 1: TypeId;id
+     * Other lines: idProd;cant
+     * * @param salesCount Number of sales records to generate
+     * @param typeId Document type (e.g., CC)
+     * @param id Document number
+     */
   public static void createSalesMenFile(int randomSalesCount, String typeId, long id) {
     String fileName = "ventas_" + id + ".txt";
     try (PrintWriter writer = new PrintWriter(new File(fileName))) {
