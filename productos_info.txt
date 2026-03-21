@@ -1,0 +1,10 @@
+1;Monitor Mod-1;78593
+2;Teclado Mod-2;48410
+3;Monitor Mod-3;32492
+4;Mouse Mod-4;17656
+5;Laptop Mod-5;34896
+6;Impresora Mod-6;43263
+7;Monitor Mod-7;44172
+8;Mouse Mod-8;74644
+9;Impresora Mod-9;13290
+10;Teclado Mod-10;47888
