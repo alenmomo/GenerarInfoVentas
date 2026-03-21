@@ -1,2 +1,8 @@
-# GenerarInfoVentas
-Programa en Java desarrollado para la Entrega 1 del módulo Conceptos Fundamentales de Programación. Genera de forma automática y pseudoaleatoria archivos planos (.txt) con información de productos, vendedores y registros de ventas para su posterior procesamiento.
+# Proyecto: Generación de Archivos Planos
+**Módulo:** Conceptos Fundamentales de Programación
+**Estudiante:** [Tu Nombre]
+**Entrega:** Semana 3 - Escenario 3
+
+## Descripción
+Este programa en Java genera archivos .txt pseudoaleatorios para simular 
+la base de datos de un sistema de ventas.
