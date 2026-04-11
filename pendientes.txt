@@ -1,0 +1,14 @@
+PROYECTO: GENERACIÓN Y PROCESAMIENTO DE VENTAS
+ENTREGA 2 - SEMANA 5
+ESTADO DEL PROYECTO: VERSIÓN PRELIMINAR FUNCIONAL
+
+Elementos faltantes para la Entrega Final (Semana 7 y 8):
+
+1. Punto Extra C: Implementar la detección de errores en archivos de ventas 
+   (identificar si un ID de producto no existe en el maestro de productos).
+2. Validación de Datos: Agregar lógica para evitar el procesamiento de 
+   cantidades o precios negativos.
+3. Documentación Exhaustiva: Refinar los comentarios JavaDoc en todos los 
+   métodos de la clase 'main' y 'GenerateInfoFiles'.
+4. Archivo conclusion.txt: Redacción del resumen de aprendizaje, dificultades 
+   y aplicaciones profesionales según los requisitos de la guía.
