@@ -1,0 +1,17 @@
+PROYECTO: GENERACIÓN Y PROCESAMIENTO DE VENTAS
+ENTREGA 2 - SEMANA 5
+ESTADO DEL PROYECTO: VERSIÓN PRELIMINAR FUNCIONAL
+CREADO POR: Alvaro Enrique Moreno - Daniela Escobar Gutierrez - Freddy Steven Ruiz - Jairo Londoño
+
+- Lo aprendido durante el desarrollo del proyecto:
+Respuesta: A lo largo de estas semanas, el equipo comprendió la importancia de la arquitectura modular en Java. Aprendimos que el uso de dos clases con métodos 'main' independientes (GenerateInfoFiles y Main) permite una separación clara de responsabilidades: una dedicada a la creación de entornos de prueba y otra al procesamiento lógico de negocio. 
+Desde el punto de vista técnico, dominamos el uso de estructuras de datos avanzadas como 'HashMap' para cruzar información entre archivos de productos y vendedores de manera eficiente. También aprendimos a gestionar la persistencia de datos mediante archivos planos (.txt) y su exportación profesional a archivos .csv, aplicando estándares de codificación como UTF-8 y caracteres BOM para asegurar que los reportes sean legibles en software externo como Excel.
+
+- Posibles aplicaciones en su vida profesional de las destrezas y conocimientos adquiridos y
+practicados durante el desarrollo del proyecto.
+Respuesta: Las destrezas adquiridas tienen una aplicación directa en el mundo laboral, especialmente en la automatización de procesos administrativos. La capacidad de programar herramientas que lean cientos de archivos de texto y generen reportes consolidados sin intervención del usuario ahorra tiempo y reduce errores humanos. 
+Como futuros profesionales, podemos aplicar el concepto de "generación pseudoaleatoria" para crear simulacros de bases de datos antes de lanzar un producto real. Además, la documentación técnica bilingüe y el uso de repositorios como GitHub son estándares internacionales que ahora sabemos manejar, facilitando nuestra integración en equipos de desarrollo globales.
+
+- Las dificultades presentadas durante el desarrollo del proyecto.
+Respuesta: El mayor reto para el grupo fue asegurar la integridad referencial de los datos; es decir, garantizar que los archivos de ventas generados contuvieran únicamente IDs de productos existentes en el catálogo maestro. Lograr que el programa principal explorara automáticamente la carpeta del proyecto sin conocer de antemano el número de vendedores también requirió un manejo avanzado de la clase 'File' y filtros de búsqueda específicos.
+Finalmente, el trabajo colaborativo nos obligó a estandarizar el nombramiento de variables y el espaciado para que el código de los cuatro compañeros fuera coherente y cumpliera con las "buenas prácticas de programación" exigidas por la institución.
